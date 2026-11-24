@@ -1,0 +1,91 @@
+/*
+ * AI Atlas India design tokens. "A printed atlas": ink, paper, sea, a signal
+ * yellow and a route red. Square corners, ruled lines, no shadows.
+ *
+ * This file is served unchanged at /kit/tokens.css.
+ * Do not add colours. Do not change values without sign-off.
+ */
+:root {
+  /* Colour */
+  --atlas-ink: #0F1B2D;      /* Text, rules, dark bands */
+  --atlas-paper: #FFFFFF;    /* Page and card ground */
+  --atlas-sea: #E4EDF2;      /* Alternate bands */
+  --atlas-grid: #D5E1E9;     /* Map grid on sea */
+  --atlas-muted: #43536B;    /* Secondary text */
+  --atlas-rule: #C5D1DB;     /* Row dividers */
+  --atlas-signal: #F4C430;   /* Primary action, notices */
+  --atlas-route: #C9361A;    /* Numbers, link underline */
+
+  /* Tints used inside components */
+  --atlas-ink-soft: #1B2A44;   /* Figure ground on ink */
+  --atlas-ink-line: #263852;   /* Contour lines on ink */
+  --atlas-on-ink: #E4EDF2;     /* Body text on ink */
+  --atlas-on-ink-muted: #A9BACB; /* Labels on ink */
+  --atlas-wash: #F6F8FA;       /* Blank rows */
+  --atlas-figure: #EEF3F6;     /* Figure ground on paper */
+
+  /* Section colours. White text on each passes WCAG AA. */
+  --atlas-whatsapp: #17794D;
+  --atlas-crm: #2463B0;
+  --atlas-erp: #6A4BB0;
+  --atlas-voice: #B32672;
+  --atlas-indic: #8A5A1C;
+  --atlas-gpu: #44546A;
+  --atlas-sellers: #0C7C86;
+  --atlas-factory: #5C7A1A;
+  --atlas-automation: #6B4A3A; /* Added per Vyohm setup email: plate 16, AUTOMATION */
+
+  /* Type families. The --font-* variables are set by the site's font loader. */
+  --atlas-font-display: var(--font-display, 'Bricolage Grotesque'), 'Arial Narrow', sans-serif;
+  --atlas-font-body: var(--font-body, 'IBM Plex Sans'), system-ui, sans-serif;
+  --atlas-font-mono: var(--font-mono, 'IBM Plex Mono'), ui-monospace, monospace;
+
+  /* Type scale: size / line height */
+  --atlas-display: 700 4.5rem/1 var(--atlas-font-display);      /* 72/72 */
+  --atlas-h2: 700 2.75rem/1.0909 var(--atlas-font-display);     /* 44/48 */
+  --atlas-h3: 700 1.5rem/1.25 var(--atlas-font-display);        /* 24/30 */
+  --atlas-body: 400 1rem/1.625 var(--atlas-font-body);          /* 16/26 */
+  --atlas-small: 400 0.875rem/1.5714 var(--atlas-font-body);    /* 14/22 */
+  --atlas-label: 400 0.75rem/1.5 var(--atlas-font-mono);        /* 12, capitals, +0.1em */
+  --atlas-label-tracking: 0.1em;
+
+  /* Space */
+  --atlas-space-1: 4px;
+  --atlas-space-2: 8px;
+  --atlas-space-3: 12px;
+  --atlas-space-4: 16px;
+  --atlas-space-5: 24px;
+  --atlas-space-6: 32px;
+  --atlas-space-7: 48px;
+  --atlas-space-8: 64px;
+
+  /* Shape */
+  --atlas-radius: 0;
+  --atlas-border: 1.5px solid var(--atlas-ink);      /* Boxes and buttons */
+  --atlas-band-rule: 2px solid var(--atlas-ink);     /* Between page bands */
+  --atlas-row-rule: 1px solid var(--atlas-rule);     /* Between rows */
+  --atlas-grid-size: 48px;                           /* Map grid on sea bands */
+  --atlas-content: 1120px;                           /* Content width */
+  --atlas-gutter: 32px;                              /* 20px on phones */
+  --atlas-tap: 44px;                                 /* Smallest tap target */
+
+  /* The colour of the current section. Set by data-section on any element. */
+  --atlas-section: var(--atlas-ink);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --atlas-gutter: 20px;
+    --atlas-grid-size: 39px;
+  }
+}
+
+[data-section='whatsapp'] { --atlas-section: var(--atlas-whatsapp); }
+[data-section='crm'] { --atlas-section: var(--atlas-crm); }
+[data-section='erp'] { --atlas-section: var(--atlas-erp); }
+[data-section='voice'] { --atlas-section: var(--atlas-voice); }
+[data-section='indic'] { --atlas-section: var(--atlas-indic); }
+[data-section='gpu'] { --atlas-section: var(--atlas-gpu); }
+[data-section='sellers'] { --atlas-section: var(--atlas-sellers); }
+[data-section='factory'] { --atlas-section: var(--atlas-factory); }
+[data-section='automation'] { --atlas-section: var(--atlas-automation); }
