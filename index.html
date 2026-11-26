@@ -24,6 +24,22 @@
   h1 { font: var(--atlas-h2); margin: 0 0 var(--atlas-space-5); max-width: 18ch; }
   .hero p.lead { max-width: 60ch; margin: 0 0 var(--atlas-space-4); }
   .notice { display: inline-block; border: var(--atlas-border); border-left: 8px solid var(--atlas-section); padding: var(--atlas-space-3) var(--atlas-space-4); margin-top: var(--atlas-space-4); font: var(--atlas-small); }
+  .hero-actions { margin-top: var(--atlas-space-5); }
+  .about-link {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--atlas-tap);
+    padding: 0 var(--atlas-space-4);
+    border: var(--atlas-border);
+    background: var(--atlas-paper);
+    color: var(--atlas-ink);
+    font: var(--atlas-small);
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: var(--atlas-route);
+    text-underline-offset: 3px;
+  }
+  .about-link:hover { background: var(--atlas-signal); color: var(--atlas-ink); }
   .ownership { background: var(--atlas-sea); border-top: var(--atlas-band-rule); }
   .ownership p { max-width: var(--atlas-content); margin: 0 auto; padding: var(--atlas-space-5) var(--atlas-gutter); font: var(--atlas-small); }
 </style>
@@ -189,6 +205,9 @@
     <p class="lead">This section answers the questions Indian small-business owners ask before buying AI automation: what it costs, whether it works with the tools they already use, and how to choose.</p>
     <p class="lead">Every answer is drafted with AI and checked by a real expert before it is published.</p>
     <p class="notice">The first reviewed answers are coming soon.</p>
+    <div class="hero-actions">
+      <a class="about-link" href="/about.html">About this section: how AI drafts &amp; how our expert reviews answers &rarr;</a>
+    </div>
   </section>
 </main>
 <div class="ownership"><p>AI Atlas India is owned by Vyohm AI Private Limited, which also sells AI products. We cover every provider, Vyohm included, by the same rules.</p></div>
