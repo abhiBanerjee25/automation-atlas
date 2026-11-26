@@ -24,7 +24,7 @@
   h1 { font: var(--atlas-h2); margin: 0 0 var(--atlas-space-5); max-width: 18ch; }
   .hero p.lead { max-width: 60ch; margin: 0 0 var(--atlas-space-4); }
   .notice { display: inline-block; border: var(--atlas-border); border-left: 8px solid var(--atlas-section); padding: var(--atlas-space-3) var(--atlas-space-4); margin-top: var(--atlas-space-4); font: var(--atlas-small); }
-  .hero-actions { margin-top: var(--atlas-space-5); }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: var(--atlas-space-3); margin-top: var(--atlas-space-5); }
   .about-link {
     display: inline-flex;
     align-items: center;
@@ -207,6 +207,7 @@
     <p class="notice">The first reviewed answers are coming soon.</p>
     <div class="hero-actions">
       <a class="about-link" href="/about.html">About this section: how AI drafts &amp; how our expert reviews answers &rarr;</a>
+      <a class="about-link" href="https://bsky.app/profile/aiatlas-automation.bsky.social" rel="noopener noreferrer">Bluesky updates: @aiatlas-automation.bsky.social (automated) &rarr;</a>
     </div>
   </section>
 </main>
